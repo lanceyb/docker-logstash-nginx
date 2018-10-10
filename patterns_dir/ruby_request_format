@@ -1,0 +1,6 @@
+RAILSPATH (?:[^#]+)#(?:\w+)
+RAILSFORMAT (?:([*/\w\d]+))
+RAILSCONTROLLER (?:[\w\d:]+)
+RAILSACTION (?:\w+)
+RAILSDATETIME (?:%{YEAR}-%{MONTHNUM}-%{MONTHDAY}\s%{TIME}\s\+[0-9]+)
+RAILSAPPVERSION \d+(\.\d+)*

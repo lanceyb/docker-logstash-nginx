@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  source:
+    image: logstash:5.6
+    container_name: 'logstash'
+    ports:
+     - "5044:5044"
+    volumes:
+     - ./conf:/config-dir
+     - ./patterns_dir:/patterns_dir
+    command: ["-f", "/config-dir/logstash.conf"]
